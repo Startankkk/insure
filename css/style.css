@@ -20,7 +20,7 @@ body{
         margin: center;
     }
     header.picture{
-       
+
         margin: center;
     }
 }
@@ -46,7 +46,7 @@ body{
     p{
         color: white;
         padding-bottom: 4rem;
-        padding-top: 4rem;
+        padding-top: 1.6rem;
     }
     text-align: center;
     a{
@@ -71,7 +71,11 @@ body{
         display:flex;
         margin: center;
         img{ 
-          margin-left: 6rem;
+          margin-left: 3rem;
+          margin-right: 16.5rem;
+          margin-top: 10.5rem;
+          margin-bottom: -15.5rem;
+
         }
     }
     .top-page h1{
@@ -79,8 +83,8 @@ body{
         justify-content: left;
         align-items: center;
         text-align: left;
-        height: 150px;
-        margin-top: 60px;
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
     }
     .top-page p{
         display: flex;
@@ -89,7 +93,7 @@ body{
         text-align: left;
     }
     .top-page a{
-        text-align: left;
+        text-align: start;
         height: 50px;
         display: inline-block;
     }
@@ -97,6 +101,7 @@ body{
 
 .middle-page{
     text-align: center;
+    padding-top: 14rem;
     h2{
         font-size: 4rem;
         margin-bottom: 2rem;
@@ -112,26 +117,13 @@ body{
         text-align: center;
         gap: 2rem;
         flex-direction: column;
-        picture{
+    }
+    .vitrine {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
-    }
-}
-
-@media (min-width: 992px) {
-    .middle-page ul.list-middle{
-        flex-direction: row;
-        margin-left: 2rem;
-        padding-bottom: 50px;
-    }
-    h2{
-      padding-top: 50px;
-      padding-bottom: 50px;
-      text-align: left;
-      margin-left: 2rem;
-    }
 }
 
 .bottom-page{
@@ -308,4 +300,25 @@ header {
   .burger-toggle:checked + .burger-icon span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
+}
+
+@media (min-width: 992px) {
+    .middle-page ul.list-middle{
+        flex-direction: row;
+        padding-bottom: 15.8rem;
+        padding-left: 16.5rem;
+        padding-right: 16.5rem;
+        text-align: start;
+    }
+    h2{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: left;
+      margin-left: 16.5rem;
+    }
+    .vitrine {
+        padding-bottom: 3.2rem;
+        max-width: 8.6rem;
+    }
+
 }
