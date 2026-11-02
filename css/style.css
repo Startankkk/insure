@@ -30,8 +30,8 @@ body{
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 2rem;
-
 }
+
 .top-page{
     background-color: #2d2641;
     padding-bottom: 30px;
@@ -52,8 +52,10 @@ body{
     a{
     color: white;
     border: 0.1rem solid #FFFFFF;
-    padding: 12px 18px;
+    padding: 12px 28.5px;
     display: inline-block;
+    text-decoration: none;
+
     }
     picture{
         display: flex;
@@ -95,7 +97,7 @@ body{
     .top-page a{
         text-align: start;
         height: 50px;
-        display: inline-block;
+        display: table;
     }
 }
 
@@ -129,8 +131,8 @@ body{
 .bottom-page{
     background-color: #2d2641;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 69px;
+    padding-bottom: 69px;
     margin: 2rem;
     h3{
         font-size: 4rem;
@@ -140,19 +142,29 @@ body{
     a{
         color: white;
         border: 0.1rem solid white;
-        padding: 12px 18px;
+        padding: 12px 28.5px;
+
     }
 }
 
 @media (min-width: 992px) {
-    .bottom-page h3{
+    .bottom-page {
+    display: flex;
+    justify-content: space-between;
+    h3{
         text-align: left;
         margin-left: 2rem;
+        padding-left: 8.1rem
     }
-    a{
-        border: 0.1rem solid white;
-        border-radius: 0.2rem;
+        a{
+            text-align: start;
+            height: 50px;
+            display: table;
+            margin-top: 4rem;
+            margin-right: 8rem;
+            text-decoration: none;
     }
+}
 }
 
 .footer-page{
@@ -184,20 +196,54 @@ body{
         padding-top: 3rem;
     }
 
-    .list-info{
-        text-align: center;
-        line-height: 40px;
-    }
-
     @media (min-width:  992px) {
-       .list-info{
-             display: flex;
-             flex-direction: row;
-             padding-left: 40px;
-             margin: 20px;
-             
+       .footer-company, .footer-help, .footer-contact, .footer-others{
+            DISPLAY: flex;
+             flex-direction: column;
+             padding-left: 6.5rem;
+             margin: 45px;
+        }
+        .footer-info{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+            flex-direction: row;
+            text-align: left;
+            
+        }
+        h4{
+            font-size: 1.3rem;
+            text-align: left;
+            padding-bottom: 3.5rem;
+        }
+        a{
+            padding-bottom: 1rem;
+            gap: 1rem;
+            text-decoration: none;
+            margin-right: 3rem;
+        
         }
     }
+
+@media (min-width: 992px) {
+    .footer-page div.list-logo{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    list-style: none;
+    padding-left: 16.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-page ul.list-social{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 16.5rem;
+    }
+}
+   
 
     h1, h2, h3, h4, h5, h6{
  font-family: "DM Serif Display", serif;
